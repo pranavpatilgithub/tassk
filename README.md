@@ -22,16 +22,20 @@ TaskFlowX focuses on simplicity without sacrificing functionality. Organize your
 
 ## Screenshots
 
+<img src="screenshots/task-creation-1.png" alt="TaskFlowX Main Interface" width="600"/>
+
 *The clean, minimal interface of TaskFlowX showing all four task categories*
-![TaskFlowX Main Interface](screenshots/task-creation-1.png)
+
+<img src="screenshots/task-creation-2.png" alt="Task Creation" width="500"/>
 
 *Creating a new task with just a few clicks*
-![Task Creation](screenshots/task-creation-2.png)
+
+<img src="screenshots/archive-1.png" alt="Drag and Drop" width="500"/>
+
+<img src="screenshots/archive-2.png" alt="Archive View" width="500"/>
 
 *Access recently completed tasks in the archive view*
-![Archive View](screenshots/archive-1.png)
 
-![Archive View](screenshots/archive-2.png)
 
 ## Project Structure
 
@@ -54,4 +58,4 @@ taskflowx/
 
 ## Contact
 
-Your Name - [@thepranavpatil](https://www.linkedin.com/in/thepranavpatil/) - pranavcode010@gmail.com
+Pranav Patil- [@thepranavpatil](https://www.linkedin.com/in/thepranavpatil/) - pranavcode010@gmail.com
