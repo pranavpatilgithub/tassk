@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "tassk: Smart Task Manager",
+  "version": "1.0",
+  "description": "A minimalist drag-and-drop task manager with smart categorization, archiving, and effortless task management across multiple timeframes.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "author": "Your Name or Company"
+}
