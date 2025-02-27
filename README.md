@@ -21,17 +21,16 @@ TaskFlowX focuses on simplicity without sacrificing functionality. Organize your
 5. Archive completed tasks with the archive button
 
 ## Screenshots
-*The clean, minimal interface of TaskFlowX showing all four task categories*
 <img src="screenshots/task-creation-1.png" alt="TaskFlowX Main Interface" width="500"/>
+*The clean, minimal interface of TaskFlowX showing all four task categories*
 
 
-*Creating a new task with just a few clicks*
 <img src="screenshots/task-creation-2.png" alt="Task Creation" width="500"/>
+*Creating a new task with just a few clicks*
 
-*Access recently completed tasks in the archive view*
 <img src="screenshots/archive-1.png" alt="Drag and Drop" width="600"/>
-
 <img src="screenshots/archive-2.png" alt="Archive View" width="600"/>
+*Access recently completed tasks in the archive view*
 
 
 
