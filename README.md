@@ -1,1 +1,57 @@
 # tassk
+A minimalist yet powerful task management extension designed for productivity-focused users who need an efficient way to organize their daily activities.
+
+## Overview
+TaskFlowX focuses on simplicity without sacrificing functionality. Organize your tasks into intuitive time-based categories - Today, Tomorrow, Someday, and Important - allowing you to prioritize effectively and stay focused on what matters.
+
+## Key Features
+- **Clean, distraction-free minimalist interface**
+- **Intuitive drag-and-drop functionality** for easy task rearrangement
+- **Smart time-based categorization** (Today, Tomorrow, Someday, Important)
+- **One-click archiving system** with 24-hour recovery window
+- **Instant task creation** with minimal clicks
+- **Works offline** with automatic syncing across Chrome instances
+- **Zero setup required** - start organizing immediately
+
+## Usage
+1. Click the `tassk` icon in your Chrome toolbar to open the task manager
+2. Add tasks using the "+" button
+3. Organize tasks by dragging and dropping them between categories
+4. Mark tasks as complete by clicking the checkbox
+5. Archive completed tasks with the archive button
+
+## Screenshots
+
+*The clean, minimal interface of TaskFlowX showing all four task categories*
+![TaskFlowX Main Interface](screenshots/task-creation-1.png)
+
+*Creating a new task with just a few clicks*
+![Task Creation](screenshots/task-creation-2.png)
+
+*Access recently completed tasks in the archive view*
+![Archive View](screenshots/archive-1.png)
+
+![Archive View](screenshots/archive-2.png)
+
+## Project Structure
+
+```
+taskflowx/
+├── manifest.json        # Extension manifest
+├── popup/
+│   ├── index.html       # Main extension popup
+│   ├── popup.js         # Popup functionality
+│   └── styles.css       # Styling
+├── background.js        # Background processes
+├── assets/
+│   └── icons/           # Extension icons
+└── lib/                 # Third-party libraries
+```
+
+### Prerequisites
+- Chrome browser
+- Basic knowledge of HTML, CSS, and JavaScript
+
+## Contact
+
+Your Name - [@thepranavpatil](https://www.linkedin.com/in/thepranavpatil/) - pranavcode010@gmail.com
