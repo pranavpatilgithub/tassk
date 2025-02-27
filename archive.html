@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Archive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Albert Sans", serif;
+        }
+        @font-face {
+            font-family: 'Albert Sans';
+            src: url('./fonts/Albert_Sans/static/AlbertSans-Medium.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Albert Sans';
+            src: url('./fonts/Albert_Sans/static/AlbertSans-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Rowdies';
+            src: url('./fonts/Rowdies/Rowdies-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 400;
+            color: #333;
+        }
+
+        .back-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: black;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .back-btn img{
+            width: 15px;
+        }
+        .archive-list {
+            list-style-type: none;
+        }
+
+        .archive-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background: white;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border-left: 3px solid #ccc;
+        }
+
+        .archive-item.today {
+            border-left-color: #4caf50;
+        }
+
+        .archive-item.tomorrow {
+            border-left-color: #2196f3;
+        }
+
+        .archive-item.someday {
+            border-left-color: #9c27b0;
+        }
+
+        .archive-item.important {
+            border-left-color: #f44336;
+        }
+
+        .archive-text {
+            flex-grow: 1;
+            font-size: 16px;
+        }
+
+        .archive-meta {
+            color: #999;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 8px;
+        }
+
+        .restore-btn,
+        .delete-btn {
+            background: none;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .restore-btn {
+            color: #2196f3;
+        }
+
+        .restore-btn:hover {
+            background-color: #e3f2fd;
+            border-color: #bbdefb;
+        }
+
+        .delete-btn {
+            color: #f44336;
+        }
+
+        .delete-btn:hover {
+            background-color: #ffebee;
+            border-color: #ffcdd2;
+        }
+
+        .empty-message {
+            text-align: center;
+            color: #999;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Archive</h1>
+        <button class="back-btn" id="back-btn"><img src="/icons/back.png" alt="icon">Go Back</button>
+    </header>
+
+    <ul class="archive-list" id="archive-list"></ul>
+
+    <div id="empty-message" class="empty-message" style="display: none;">
+        <p>Your archive is empty. Deleted tasks will appear here for 1 day.</p>
+    </div>
+
+    <script src="archive.js"></script>
+</body>
+
+</html>
