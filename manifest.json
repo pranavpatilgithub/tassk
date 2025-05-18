@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "tassk: Smart Task Manager",
-  "version": "1.0",
-  "description": "A minimalist drag-and-drop task manager with smart categorization, archiving, and effortless task management across multiple timeframes.",
+  "name": "tasssk: Easy To-Do !",
+  "version": "1.1.0",
+  "description": "A drag-and-drop task manager with smart categorization, archiving, and effortless task management across multiple timeframes.",
+  "keywords": ["todo", "task manager","tasssk", "minimalist todo", "chrome task extension", "productivity", "to-do list"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -19,5 +20,5 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "author": "Your Name or Company"
+  "author": "Pranav Patil"
 }
