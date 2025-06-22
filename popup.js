@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sectionBtns = document.querySelectorAll('.section-btn');
     const archiveBtn = document.getElementById('archive-btn');
     const filterBtn = document.getElementById('filter-btn');
+    const homeBtn = document.getElementById('home-btn');
     const filterDropdown = document.getElementById('filter-dropdown');
     const filterItems = document.querySelectorAll('.filter-item');
     const todoLists = document.querySelectorAll('.todo-list');
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     todoInput.addEventListener('keypress', addTodo);
     sectionBtns.forEach(btn => btn.addEventListener('click', changeSection));
     archiveBtn.addEventListener('click', showArchive);
+    homeBtn.addEventListener('click', goToHome);
     filterBtn.addEventListener('click', toggleFilterDropdown);
     filterItems.forEach(item => item.addEventListener('click', changeFilter));
     
@@ -309,6 +311,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function showArchive() {
         // Open archive page in a new tab
         chrome.tabs.create({ url: 'archive.html' });
+    }
+
+    function goToHome() {
+        // Open archive page in a new tab
+        chrome.tabs.create({ url: 'home.html' });
     }
     
     // Drag and Drop Functions
